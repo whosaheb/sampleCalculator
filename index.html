@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator web application</title>
+        <script>
+            $("button").click(function() {
+                var fired_button = $(this).val();
+                alert(fired_button);
+            });
+        </script>
+    </head>
+    
+    <body>
+        <link rel="stylesheet" href="styleForIndex.css">
+        <table>
+            <tr>
+                <input type="text" id ="result" ></input>
+            </tr>
+            <br><br>
+            
+            <tr>
+                <div class="btn-group">
+                    <button id="1" onClick="signFn(this.id)">1</button>
+                    <button id="2" onClick="signFn(this.id)">2</button>
+                    <button id="3" onClick="signFn(this.id)">3</button>
+                    <button id="+" onclick="signFn(this.id)">+</button>
+                </div>
+            </tr>
+            <br>
+            <tr>
+                <div class="btn-group">
+                    <button id="4" onClick="signFn(this.id)">4</button>
+                    <button id="5" onClick="signFn(this.id)">5</button>
+                    <button id="6" onClick="signFn(this.id)">6</button>
+                    <button id="-" onclick="signFn(this.id)">-</button>
+                </div>
+            </tr>
+            <br>
+            <tr>
+                <div class="btn-group">
+                    <button id="7" onClick="signFn(this.id)">7</button>
+                    <button id="8" onClick="signFn(this.id)">8</button>
+                    <button id="9" onClick="signFn(this.id)">9</button>
+                    <button id="*" onclick="signFn(this.id)" value="*">x</button>
+                </div>
+            </tr>
+            <br>
+            <tr>
+                <div class="btn-group">
+                    <button id="clearSign" class="may_button" onclick="clearSign()">C</button>
+                    <button id="0" onClick="signFn(this.id)">0</button>
+                    <button id="equalSign" class="may_button" onclick="solve()" value="=">=</button>
+                    <button id="/" class="may_button" onclick="signFn(this.id)" value="/">/</button>
+                </div>
+            </tr>
+        </table>
+
+    </body>
+    <script type="text/javascript" src="index.js"></script>
+</html>
